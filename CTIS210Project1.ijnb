@@ -1,0 +1,152 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 5,
+  "metadata": {
+    "language_info": {
+      "name": "java"
+    }
+  },
+  "cells": [
+    {
+      "id": "3602ff11-3efc-414b-93ac-4ac0e76cb7a5",
+      "cell_type": "markdown",
+      "source": "#### CTIS 210 Project 1\n\nSome of this project will be similar to what you did in Project 0, but we'll also work on some new concepts.\n\nFollow the instructions in each description cell to complete the assignment.",
+      "metadata": {
+        "language": "markdown",
+        "id": "3602ff11-3efc-414b-93ac-4ac0e76cb7a5"
+      }
+    },
+    {
+      "id": "af895543-fe73-44c7-ae7f-693d154ea9c4",
+      "cell_type": "markdown",
+      "source": "##### Student information task\n\nIn the next code, enter your name and G number in the appropriate places. Run the cell to see the output.\n\nLet's practice adding text to a description cell. To edit this text, double-click on this cell. You will then see this same text (along with some characters that tell the notebook how to format some of the text.)\n\nCopy the output from running the code cell and paste it at the end of this notebook so it appears below the horizontal line.\n_______\n",
+      "metadata": {
+        "language": "markdown",
+        "id": "af895543-fe73-44c7-ae7f-693d154ea9c4"
+      }
+    },
+    {
+      "id": "b9b18cca-76a4-48d8-8999-f31228d43478",
+      "cell_type": "code",
+      "source": "String studentName = \" \";\nString gNumber = \"G00000000\";\n\nSystem.out.println(\"Student Name: \" + studentName);\nSystem.out.println(\"G Number: \" + gNumber);\n",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "836a895f-a2c1-4535-867b-3ff055bcdc43",
+      "cell_type": "markdown",
+      "source": "##### Class information\n\nThe next code cell contains two sets of three variables. Each set of variables defines a class name, the number of credits, and a decimal number that corresponds to a letter grade according to the following table.\n\n|Grade|Value|Grade|Value|\n|:--:|:--:|:--:|:--:|\n|A|4.0|C|2.0|\n|A-|3.7|C-|1.7|\n|B+|3.3|D+|1.3|\n|B|3.0|D|1.0|\n|B-|2.7|D-|0.7|\n|C+|2.3|F|0|\n",
+      "metadata": {
+        "language": "markdown",
+        "id": "836a895f-a2c1-4535-867b-3ff055bcdc43"
+      }
+    },
+    {
+      "id": "c20d422f-4f30-45d7-bcd3-50241f0019a8",
+      "cell_type": "markdown",
+      "source": "##### Class information task\n\n* First, change the value for `class1Grade` to the value you hope to earn for this class, based on the above table.\n* Second, change the values for `class2Name`, `class2Credits`, and `class2Grade` to be appropriate for one of the other classes you're taking this semester.\n* Finally, declare and initialize three more variables with identifiers of your choice for *each* of the classes you're taking this semester.\n\nBe sure that at least one of the grade values is different from the others, even if you hope for A's in all your classes.",
+      "metadata": {
+        "language": "markdown",
+        "id": "c20d422f-4f30-45d7-bcd3-50241f0019a8"
+      }
+    },
+    {
+      "id": "505fe81c-5cb4-4180-96d8-9d5dc1f0bd21",
+      "cell_type": "code",
+      "source": "String class1Name = \"CTIS 210\";\nint class1Credits = 4;\ndouble class1Grade = 3.3;\n\nString class2Name = \"Chem 111\";\nint class2Credits = 3;\ndouble class2Grade = 3.7;",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "f54b52a1-f206-4806-9a72-7feb0d89a82a",
+      "cell_type": "markdown",
+      "source": "##### Class information display task\n\nAdd two more lines in the next code cell that display the values of the two new classes you added. Always run the code cells to make sure you get what you're expecting. ",
+      "metadata": {
+        "language": "markdown",
+        "id": "f54b52a1-f206-4806-9a72-7feb0d89a82a"
+      }
+    },
+    {
+      "id": "23aaab36-e5b2-4742-b02f-c7069c9ca7df",
+      "cell_type": "markdown",
+      "source": "##### Two questions to answer\n\n1. The characters `\\t` are in the code, but don't appear in the output. What is the purpose of those characters? (Try writing `\\t\\t` instead of `\\t` and see what happens when you run the cell.) Write your answer below the horizontal line.\n________\n\n2. The `+` operator in this code does not do arithmetic. What information is it acting on and what is the result? Write your answer below the horizontal line.\n________\n\nYou may want to use this information to format your output more neatly.",
+      "metadata": {
+        "language": "markdown",
+        "id": "23aaab36-e5b2-4742-b02f-c7069c9ca7df"
+      }
+    },
+    {
+      "id": "ef1b5fe0-3a3b-4420-8a97-f76435eff423",
+      "cell_type": "code",
+      "source": "System.out.println(\"Class\\t\\tCredits\\tGrade\");\nSystem.out.println(class1Name + \"\\t\" + class1Credits + \"\\t\" + class1Grade);\nSystem.out.println(class2Name + \"\\t\" + class2Credits + \"\\t\" + class2Grade);",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "301afacb-3dfe-435a-8cd2-275f79f76dca",
+      "cell_type": "markdown",
+      "source": "##### GPA calculation task\n\nThe following code cell shows how to calculate a grade point average (GPA) for two classes. Modify that code so that it calculates your hoped-for GPA for all four classes you're taking.",
+      "metadata": {
+        "language": "markdown",
+        "id": "301afacb-3dfe-435a-8cd2-275f79f76dca"
+      }
+    },
+    {
+      "id": "e961219e-1e37-4be7-887b-ac25dd9c68ad",
+      "cell_type": "code",
+      "source": "double GPA = (class1Credits * class1Grade + class2Credits * class2Grade) /\n        (class1Credits + class2Credits);\n",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "f02c2a1a-ad93-4d6e-904d-4c361e5f6a51",
+      "cell_type": "markdown",
+      "source": "##### Information display task\n\nWhen we use `System.out.println` with decimal numbers, Java will display all the decimal places it can, and that's often not what we need.\n\nRun the following code cell and examine the difference in the output.\n\n* Suppose that you want to print out the result with six decimal places. Add a line of code that does that.\n* Now suppose that we want to use scientific notation with a specified number of decimal places. We can do that by replacing `f` with `e`. Add a line of code that prints the GPA in scientific notation with 5 decimal places.\n* *Optional* Explore what happens if you put a number between `%` and `.`. Try some examples and then describe what adding that number does.",
+      "metadata": {
+        "language": "markdown",
+        "id": "f02c2a1a-ad93-4d6e-904d-4c361e5f6a51"
+      }
+    },
+    {
+      "id": "adb1fcd2-204a-4661-8af5-02e4b60a9d5c",
+      "cell_type": "code",
+      "source": "\nSystem.out.println(\"GPA: \" + GPA);\nSystem.out.printf(\"GPA: %.3f\", GPA);\n",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "bbc5e230-204f-4257-86df-6a9aaa01ec54",
+      "cell_type": "markdown",
+      "source": "##### Final task: Using code to do a calculation\n\nIn the syllabus quiz, there was a question which used two sets of information.\n\n* The percentage each area of the class (projects, exams, final project, contributions to in-class learning) contributes to the final grade.\n* Scores for an example student for each of those areas.\n\nYou then had to calculate the student's final grade. \n\nYour task is to write Java code that performs that calculation in one more more code cells. The code should satisfy the following guidelines.\n\n* The code should declare and initialize 8 variables that will hold the values provided in the quiz. You may use any identifiers you wish.\n* The code should then have calculate the overall grade in the same way you would have done on the quiz and assign that value to a variable with the appropriate type. \n* Finally, display that value similar to what was done with the GPA, but with 2 decimal places.\n\nThe output should look something like:\n\n```java\nFinal grade: 85.47\n```",
+      "metadata": {
+        "language": "markdown",
+        "id": "bbc5e230-204f-4257-86df-6a9aaa01ec54"
+      }
+    },
+    {
+      "id": "ba46c57a-31a7-4be7-bffe-dfec095a05cc",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
